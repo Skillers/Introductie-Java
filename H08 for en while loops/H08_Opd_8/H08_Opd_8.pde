@@ -1,14 +1,14 @@
+int antwoord = 0;
+int getalEen = 0;
+int getalTwee = 1;
 
-void setup(){
-mijnMethode(5, 6);
-mijnMethode(15, 26);
-}
+println(0);
+println(1);
 
-void draw(){
-
-}
-
-void mijnMethode(int getal, int getaltwee){
-    int totaal = getal + getaltwee;
-    println("Som" + getal + "" + getaltwee + "" + totaal);
+for(int i = 0; i < 45; i++){
+  antwoord = getalEen + getalTwee;
+  println(antwoord);
+  getalEen = getalTwee;
+  getalTwee = antwoord;
+  
 }
